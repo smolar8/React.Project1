@@ -280,6 +280,9 @@ a {
   height: 30px;
   background-color: white;
 }
+.fa-instagram {
+  margin: 0 10px;
+}
 
 @media screen and (min-width: 576px) {
   .nav-links {

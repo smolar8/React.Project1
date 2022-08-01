@@ -35,8 +35,14 @@ export const Services = () => {
         <div className="container_everything">
           <h2 className="title">Czym zajmuje się nasza firma?</h2>
           <div className="offer_container">
-            {services.map((service) => {
-              return <Box text={service.name} isNew={service.isNew}></Box>;
+            {services.map((service, index) => {
+              return (
+                <Box
+                  text={service.name}
+                  isNew={service.isNew}
+                  key={index}
+                ></Box>
+              );
             })}
           </div>
         </div>
